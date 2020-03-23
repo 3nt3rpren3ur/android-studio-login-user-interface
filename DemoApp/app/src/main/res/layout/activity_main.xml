@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.likhith.LoginInterface.MainActivity">
+
+    <ImageView
+        android:id="@+id/logavatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="login"
+        android:src="@drawable/com" />
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logavatar">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentLeft="true"
+                android:text="Male"
+                />
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="75dp"
+                android:layout_alignParentRight="true"
+                android:text="Female" />
+        </RelativeLayout>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/namef"
+        android:layout_below="@id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:hint="Usename"/>
+    <EditText
+        android:id="@+id/passf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namef"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:hint="Password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passf"
+        android:layout_marginLeft="150dp"
+        android:onClick="buttonClick"
+        android:text="login" />
+</RelativeLayout>
